@@ -1,0 +1,4 @@
+FROM adoptopenjdk/openjdk11
+LABEL maintainer="mini_sachdeva@gmail.com"
+COPY target/dockerfirstdemo.jar  dockerfirstdemo.jar
+ENTRYPOINT ["java","-jar","/dockerfirstdemo.jar"]
